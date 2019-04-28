@@ -13,3 +13,14 @@ You can define your own data type and use that data type to define variable.
 
 So `my_type` will be the new data type and its integer.
 
+### How to convert data type
+
+We have data type called `my_type`, to do that following syntax is used.
+
+```
+var age my_type = 29
+
+var now_age int 
+now_age = int(age) // here age which is my_type converted to int
+
+```

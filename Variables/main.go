@@ -31,4 +31,12 @@ func main() {
 	fmt.Println("Born : ", born)
 	fmt.Printf("%T\n", born)
 
+	// type conversion
+	var born1 int
+
+	born1 = int(born)
+
+	fmt.Println("Born 2 : ", born1)
+	fmt.Printf("%T\n", born1)
+
 }
