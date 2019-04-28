@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// globle definations here
+type new_type int
+
 func main() {
 	// long way
 	// var variable data type
@@ -12,5 +15,20 @@ func main() {
 	// variable := value
 	l_name := "muhandiram"
 	fmt.Println("Hello your last name is ", l_name)
+
+	type my_type int
+
+	var age my_type
+	age = 29
+
+	fmt.Println("Age is : ", age)
+	fmt.Printf("%T\n", age) // to print type of the variable
+	// Output : main.my_type -> package.data type
+
+	var born new_type
+	born = 1990
+
+	fmt.Println("Born : ", born)
+	fmt.Printf("%T\n", born)
 
 }
