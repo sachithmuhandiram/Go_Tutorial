@@ -5,17 +5,24 @@ Here I will explain basic control flow loops used in go..
 ### IF loop
  If loop works same as other programming languages. Similarity between C language.
 
+##### single if
  ```
  if condition {
      run this....
  }
+```
 
+##### if else
+```
  if condition_1 {
      condition 1 run
  }else{
      not condition 1
  }
+```
 
+##### if else if
+```
  if condition_1 {
      condition 1 run
  }else if condition_2{
@@ -23,10 +30,9 @@ Here I will explain basic control flow loops used in go..
  }else{
      no condition matched
  }
+```
 
- ```
-
- ### FOR loop
+### FOR loop
  for loop similar to other langauge defination, except for syntax declaration
 
  ```
