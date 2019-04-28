@@ -1,5 +1,5 @@
 # Go_Tutorial
-This is a golang step by step description. I update this as I learn go.
+This is a golang step by step description. I update this as I learn go lang, so there may be mistakes. If you see some, please update them.
 
 ## Folder structure
 
