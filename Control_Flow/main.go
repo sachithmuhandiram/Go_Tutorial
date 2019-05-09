@@ -40,4 +40,17 @@ func main() {
 		fmt.Println(index, "->", value)
 	}
 
+	// switch statement
+	name := "sachith"
+
+	switch name {
+	case "sachith":
+		fmt.Println("Its sachith")
+	case "muhandiram":
+		fmt.Println("Its muhandiram")
+	default:
+		fmt.Println("Non matched")
+		
+	}
+
 }

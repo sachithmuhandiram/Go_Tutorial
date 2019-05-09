@@ -52,5 +52,22 @@ for that we have to use range key word.
      fmt.Println(index "->" value)
  }
 ```
+### switch statment
+
+The only other control flow statment is `switch` in go. It doesnt have while loop etc.
+
+```
+switch condtion {
+    case statement:
+        do_something
+    case statment2 :
+        do_something_else
+    default:
+        do_nothing
+}
+
+This checks with the different parameters given in `case` statments and execute the matched one.
+If none matched, then default condition is executed. 
+
 
 
