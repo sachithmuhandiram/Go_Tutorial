@@ -1,9 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
 
 // globle definations here
 type new_type int
+
+// constants
+const (
+	Name = "Sachith Muhandiram"
+	Age  = 29
+)
 
 func main() {
 	// long way
@@ -38,5 +47,14 @@ func main() {
 
 	fmt.Println("Born 2 : ", born1)
 	fmt.Printf("%T\n", born1)
+
+	// blink identifier
+	web_data, _ := http.Get("www.google.com")
+
+	fmt.Println(web_data)
+
+	// accessing constants
+	fmt.Println(Name)
+	fmt.Println(Age)
 
 }

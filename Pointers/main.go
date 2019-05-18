@@ -23,6 +23,13 @@ func main() {
 	fmt.Println(z)  //  value -> 20
 	fmt.Println(&z) //  memory location 0xabc1050
 	fmt.Println(*y) //  value of y -> 20
+
+	var age int
+
+	fmt.Println("Please enter your age :")
+	fmt.Scan(&age)
+
+	fmt.Println("Your age is : ", age)
 }
 
 func add_ten(x *int) int { // function receives an integer pointer and returns an integer

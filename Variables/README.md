@@ -29,3 +29,29 @@ var now_age int
 now_age = int(age) // here age which is my_type converted to int
 
 ```
+
+#### Blink identifier
+If you do not need to use a variable returning from a function (commonly used there), then you use blink identifier
+
+```
+web_data,_ := http.Get("www.google.com")
+
+fmt.Println(web_data)
+
+If we dont use _, we will have to use that varibale in our code.
+http.Get(url) -> returns a response and an error (if there)
+```
+
+#### Constants
+Constant are defined and values can not be changed.
+
+`const my_name string = "Sachith Muhandiram"`
+
+If we want to declare multiple constant for our program, then we use
+
+```
+const (
+    Name = "Sachith Muhandiram"
+    Age  = 29
+)
+```
