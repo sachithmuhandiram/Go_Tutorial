@@ -63,7 +63,13 @@ func my_function(x int, func my_func func(int)) {
 }
 
 ```
+#### init function
+This function is used when we need to configure special parameters for the code.
+This is the first thing to get executed (before main).
 
 #### defer
 `defer` keyword is used when we call a function, it makes sure that called function is the last function to call in that block.
+This does opposite of `init` function.
+
+
 

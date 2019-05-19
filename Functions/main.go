@@ -55,6 +55,9 @@ func (p person) fulldetails() {
 	fmt.Printf("First Name : %s, Last Name : %s , Age : %d", p.fname, p.sname, p.age)
 }
 
+func init() {
+	fmt.Println("From init")
+}
 func main() {
 
 	foo()
