@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
@@ -13,14 +12,12 @@ func main() {
 			fmt.Println("Added value to channel")
 			ch <- i // putting value to channel
 		}
+		close(ch) // closing the channel after getting all data out
 	}()
 
-	go func() {
-		for {
-			fmt.Println("Getting value from channel ")
-			fmt.Println(<-ch) // getting value from channel
-		}
-	}()
+	for v := range ch {
+		fmt.Println("Getting value from channel ")
+		fmt.Println(v) // getting value from channel
+	}
 
-	time.Sleep(time.Second)
 } // end of main
