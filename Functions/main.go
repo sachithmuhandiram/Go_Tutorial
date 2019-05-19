@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+type person struct {
+	fname string
+	sname string
+	age   int
+}
+
 func foo() {
 	fmt.Println("Hello from foo function")
 }
@@ -40,6 +46,13 @@ func variadicArg(v ...int) int {
 	return total
 }
 
+// function tiking person struct as a receiver
+func (p person) fulldetails() {
+	fmt.Println("Person received : ", p)
+
+	fmt.Printf("First Name : %s, Last Name : %s , Age : %d", p.fname, p.sname, p.age)
+}
+
 func main() {
 
 	foo()
@@ -73,4 +86,11 @@ func main() {
 	defer world() // in this block, this is executed just before main() ends
 	hello()
 
+	// function with a structs
+	p1 := person{
+		fname: "Sachith",
+		sname: "Muhandiram",
+		age:   29,
+	}
+	p1.fulldetails()
 } // end of main function
