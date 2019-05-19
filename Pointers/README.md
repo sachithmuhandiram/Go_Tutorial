@@ -30,4 +30,4 @@ fmt.Println("Your age is : ",age)
 ```
 
 ### Important 
-array,slices,maps are considered as refereces. So if we pass one of these to a function and modify it, it means we are modifying the memory location.
+array,slices,maps and channels are considered as refereces. So if we pass one of these to a function and modify it, it means we are modifying the memory location.
