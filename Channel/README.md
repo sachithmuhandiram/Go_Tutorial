@@ -15,4 +15,25 @@ When we put a value/s to a channel, it waits until that value is taken from the 
 ch <- 6  // adding 6 to the channel
 
    <- ch // removing value from channel 
+```
+
+Adding and getting data from the channel should happen simultaniously.
+To achieve this, those two should run with different go routine or should use buffered channels.
+
+Channels can be only sending and receiving. We can not do the opposite with that channel.
+
+#### Working with multiple channels
+If we have multiple channels, we can use `select{}` for getting data from different channels.
+
+```
+select {
+    case data:= <- ch1 :
+        fmt.Println("Channel 1")
+    case data:= <- ch2 :
+        fmt.Println("Channel 2")
+    return
+   }
+```
+
+
 
