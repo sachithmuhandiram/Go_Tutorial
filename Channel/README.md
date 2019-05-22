@@ -36,7 +36,7 @@ select {
 ```
 
 ##### Altanative way for select
-I found [this is] intersting as an altanative way for `select` (https://medium.com/@pedram.esmaeeli/a-pattern-for-overcoming-non-determinism-of-golang-select-statement-139dbe93db98)
+I found [this is](https://medium.com/@pedram.esmaeeli/a-pattern-for-overcoming-non-determinism-of-golang-select-statement-139dbe93db98) intersting as an altanative way for `select`.
 
 
 
