@@ -17,4 +17,8 @@ If there is a different method to run the code, it will be described in README i
 1. You can not keep unused variables. If you define a variable, you must use it in the program. Otherwise go compiler returns error.
 2. Using IDE will help you to reduce development time.
 
+#### Additional 
+
+I found this [medium series](https://medium.com/rungo) is very useful to learn basics about go with examples. 
+
 
