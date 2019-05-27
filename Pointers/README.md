@@ -31,3 +31,5 @@ fmt.Println("Your age is : ",age)
 
 ### Important 
 array,slices,maps and channels are considered as refereces. So if we pass one of these to a function and modify it, it means we are modifying the memory location.
+
+Pointers are useful and efficient, but we should understand why and where to use them. [This example](https://medium.com/@blanchon.vincent/go-should-i-use-a-pointer-instead-of-a-copy-of-my-struct-44b43b104963) shows the difference.
